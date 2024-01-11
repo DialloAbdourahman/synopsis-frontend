@@ -145,11 +145,11 @@ const Wrapper = styled.section`
   justify-content: center;
 
   .form {
-    margin-top: 10%;
+    margin-top: 1%;
     padding: 20px;
     width: 30%;
     border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   }
 
   .form a {
