@@ -31,8 +31,12 @@ const Login = ({ user, setUser }) => {
       setUser(data);
       navigate('/');
     } catch (error) {
-      console.log(error);
-      alert(error?.response?.data?.message);
+      if (error?.response?.data?.message) {
+        alert(error?.response?.data?.message);
+      } else {
+        alert('Network error');
+      }
+
       if (error?.response?.data?.time) {
         setCountDown(error?.response?.data?.time);
       }
@@ -133,5 +137,8 @@ const Wrapper = styled.section`
     display: block;
     padding: 10px 0;
     font-size: 25px;
+    background: orange;
+    color: white;
+    border: none;
   }
 `;

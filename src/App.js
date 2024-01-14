@@ -25,6 +25,3 @@ function App() {
 }
 
 export default App;
-
-// Password should have all the needed criteria.
-// Login time out.

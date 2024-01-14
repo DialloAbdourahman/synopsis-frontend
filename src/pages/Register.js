@@ -145,9 +145,9 @@ const Wrapper = styled.section`
   justify-content: center;
 
   .form {
-    margin-top: 1%;
+    margin-top: 3%;
     padding: 20px;
-    width: 30%;
+    width: 50%;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   }
@@ -167,19 +167,21 @@ const Wrapper = styled.section`
 
   .form .form-contain {
     display: flex;
-    flex-direction: column;
     margin-bottom: 10px;
+    justify-content: space-between;
   }
 
   .form-contain label {
     font-size: 25px;
     margin-bottom: 5px;
+    width: 25%;
   }
 
   .form-contain input {
     padding: 10px;
     outline: none;
     font-size: 20px;
+    width: 75%;
   }
 
   .form button {
@@ -187,5 +189,8 @@ const Wrapper = styled.section`
     display: block;
     padding: 10px 0;
     font-size: 25px;
+    background: orange;
+    color: white;
+    border: none;
   }
 `;

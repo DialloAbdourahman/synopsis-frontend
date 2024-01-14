@@ -160,10 +160,12 @@ const UpdateAccount = ({
             onChange={(e) => setOldPassword(e.target.value)}
           />
         </div>
-        <button type='submit' className='submit'>
-          Submit
-        </button>
-        <button onClick={() => setUpdateAccount(false)}>close</button>
+        <div className='btn-container'>
+          <button onClick={() => setUpdateAccount(false)}>close</button>
+          <button type='submit' className='submit'>
+            Submit
+          </button>
+        </div>
       </form>
     </Wrapper>
   );
@@ -182,9 +184,9 @@ const Wrapper = styled.section`
   min-height: 100vh;
 
   .form {
-    margin-top: 10%;
+    margin-top: 3%;
     padding: 20px;
-    width: 30%;
+    width: 50%;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     background: white;
@@ -205,24 +207,31 @@ const Wrapper = styled.section`
 
   .form .form-contain {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    justify-content: space-between;
   }
 
   .form-contain label {
     font-size: 25px;
     margin-bottom: 5px;
+    width: 25%;
   }
 
   .form-contain input {
     padding: 10px;
     outline: none;
     font-size: 20px;
+    width: 75%;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .form button {
-    width: 100%;
-    display: block;
+    width: 30%;
     padding: 10px 0;
     font-size: 25px;
   }
